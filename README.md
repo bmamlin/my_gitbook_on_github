@@ -1,3 +1,4 @@
-# My Awesome Book
+# Create a GitBook in Github
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+This is a book testing what it's like to host a GitBook on GitHub. So, I'll push this book to GitHub and see if I can publish it via GitBook.
+
