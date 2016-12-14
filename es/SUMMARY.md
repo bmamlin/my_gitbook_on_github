@@ -1,5 +1,4 @@
-#
-Resumen
+# Resumen
 
 * [Introducción] (README.md)
 * [Primer capítulo] (chapter-1/chapter1.md)
