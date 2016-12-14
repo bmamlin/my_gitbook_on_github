@@ -15,6 +15,6 @@ Menos de 1 min 17 seg. No está mal.
 
 Intentemos agregar una imagen localmente a través de la aplicación GitBook:
 
-![](/assets/Screen Shot 2016-11-11 at 2.26.57 PM.png)
+![](../assets/Screen Shot 2016-11-11 at 2.26.57 PM.png)
 
 Bastante fácil agregar que con arrastrar y soltar.
