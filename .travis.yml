@@ -2,12 +2,12 @@ language: node_js
 node_js:
   - "node"
 before_script:
-  - "npm install -g gitbook-cli ebook-convert svgexport"
-  - "wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | python -c \"import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()\""
-  - "apt-get install -y xvfb imagemagick libxcomposite-dev"
-  - "gitbook pdf _book _book/book.pdf" # eventually want to do this for each language in LANGS.md
+  - npm install -g gitbook-cli ebook-convert svgexport
+  - wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
+  - apt-get install -y xvfb imagemagick libxcomposite-dev
+  - gitbook pdf _book _book/book.pdf # eventually want to do this for each language in LANGS.md
 script:
-  - "gitbook install && gitbook build"
+  - gitbook install && gitbook build
 deploy:
   provider: pages
   skip_cleanup: true
@@ -16,5 +16,5 @@ deploy:
     branch: master
   local_dir: _book
   fqdn: foo.ridact.com
-  name: "Burke Mamlin"
-  email: "burke@openmrs.org"
+  name: Burke Mamlin
+  email: burke@openmrs.org
