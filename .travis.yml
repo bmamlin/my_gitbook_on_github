@@ -7,8 +7,8 @@ before_script:
   - sudo apt-get install -y xvfb imagemagick libxcomposite-dev
 script:
   - gitbook install && gitbook build
-  - gitbook pdf en en/book.pdf
-  - gitbook pdf es es/book.pdf
+  - gitbook pdf en _book/en/book.pdf
+  - gitbook pdf es _book/es/book.pdf
 deploy:
   provider: pages
   skip_cleanup: true
