@@ -6,10 +6,11 @@ before_script:
   - sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
   - sudo apt-get install -y xvfb imagemagick libxcomposite-dev
 script:
-  - gitbook install && gitbook build && gitbook pdf en _book/en/book.pdf && gitbook pdf es _book/es/book.pdf
+  - gitbook install && gitbook build
+before_deploy:
+  - gitbook pdf en _book/en/book.pdf
+  - gitbook pdf es _book/es/book.pdf
   - find _book
-  - ls -l _book/en/
-  - git add -A
 deploy:
   provider: pages
   skip_cleanup: true
