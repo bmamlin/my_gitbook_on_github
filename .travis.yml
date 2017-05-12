@@ -9,6 +9,7 @@ script:
   - gitbook install && gitbook build
   - gitbook pdf en _book/en/book.pdf
   - gitbook pdf es _book/es/book.pdf
+  - find _book
 deploy:
   provider: pages
   skip_cleanup: true
