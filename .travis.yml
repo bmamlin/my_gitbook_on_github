@@ -5,9 +5,9 @@ before_script:
   - npm install -g gitbook-cli ebook-convert svgexport
   - sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
   - sudo apt-get install -y xvfb imagemagick libxcomposite-dev
-  - gitbook pdf _book _book/book.pdf # eventually want to do this for each language in LANGS.md
 script:
   - gitbook install && gitbook build
+  - gitbook pdf _book _book/book.pdf # eventually want to do this for each language in LANGS.md
 deploy:
   provider: pages
   skip_cleanup: true
