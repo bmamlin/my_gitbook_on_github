@@ -8,6 +8,8 @@ before_script:
 script:
   - gitbook install && gitbook build && gitbook pdf en _book/en/book.pdf && gitbook pdf es _book/es/book.pdf
   - find _book
+  - ls -l _book/en/
+  - git add -A
 deploy:
   provider: pages
   skip_cleanup: true
