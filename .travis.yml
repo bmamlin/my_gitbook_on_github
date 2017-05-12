@@ -7,7 +7,8 @@ before_script:
   - sudo apt-get install -y xvfb imagemagick libxcomposite-dev
 script:
   - gitbook install && gitbook build
-  - gitbook pdf _book _book/book.pdf # eventually want to do this for each language in LANGS.md
+  - gitbook pdf _book/en _book/en/book.pdf
+  - gitbook pdf _book/es _book/es/book.pdf
 deploy:
   provider: pages
   skip_cleanup: true
