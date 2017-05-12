@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "language-picker"
+        "language-picker",
+        "edit-link"
     ],
     "pluginsConfig": {
         "language-picker": {
