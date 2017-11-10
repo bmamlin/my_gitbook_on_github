@@ -18,3 +18,7 @@ Let's try adding an image locally thru the GitBook app:
 
 Pretty easy to add that with drag & drop.
 
+Let's try sharing an image across translations:
+
+![](/assets/OpenMRS-cross.png)
+
